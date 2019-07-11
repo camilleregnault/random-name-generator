@@ -1,5 +1,5 @@
 require 'json'
-# require 'rest-client'
+require 'rest-client'
 
 class ResultController < ApplicationController
   NAMES = %W(Camille Nicolas Jason Melodie Tatiana Robert Olivia Jade Rose Gabriel Julio Cassie Sammy)
@@ -8,10 +8,11 @@ class ResultController < ApplicationController
   end
 
   def show
-    @name = NAMES.sample(1)[0]
+    # @name = NAMES.sample(1)[0]
 
-    # url = 'https://uinames.com/api/'
-    # response = RestClient.get(url)
+    url = 'https://uinames.com/api/?region=france'
+    response = RestClient.get(url)
+    @name = response
     # @name = JSON.parse(response)['name']
   end
 end
