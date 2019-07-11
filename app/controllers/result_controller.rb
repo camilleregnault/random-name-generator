@@ -12,7 +12,8 @@ class ResultController < ApplicationController
 
     url = 'https://uinames.com/api/?region=france'
     response = RestClient.get(url)
-    @name = response
-    # @name = JSON.parse(response)['name']
+    @name = JSON.parse(response)['name']
+    # redirect_to action: "show"
+    render
   end
 end
