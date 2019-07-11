@@ -30,7 +30,7 @@
 #a9eec1*/
 
 .container {
-  font-family: arial;
+  font-family: helvetica;
   align-items: center;
   text-align: center;
 }
@@ -50,6 +50,26 @@ h3 {
   font-size: 30px;
 }
 
+h4 {
+  color: #ffbd39;
+  font-size: 35px;
+  padding-top: 0px;
+  margin-block-end: 10px;
+  margin-block-start: 42px;
+}
+
+h5 {
+  color: #ffbd39;
+  font-size: 30px;
+  margin-block-start: 20px;
+}
+
+h6 {
+  color: #e4007c;
+  font-size: 20px;
+  margin-block-end: 30px;
+}
+
 .btn {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
@@ -60,6 +80,7 @@ h3 {
 
 .btn-primary {
   color: white;
+  font-size: 20px;
   background-color: #85eba9;
 
   /* text-shadow: 0.5px 0.5px; */
